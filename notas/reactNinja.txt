@@ -1,0 +1,33 @@
+O que react?
+  É uma biblioteca javascript para criar interface de usuário
+
+  pode ser utilizado como uma ferramenta para um projeto completo ou parcialmente em um framework
+  MVC - é a parte de view, voltado para interface do usuario
+
+  manipulação de DOM
+    web
+    mobile
+    sistema de administração de CMS
+=========================================================================================================
+react e voltado para interação de interfaces - webapp dinâmico - interação com usuário
+=========================================================================================================
+Resolve:
+  modularização - separando responsabilidades
+  componentização
+  performace - manupulação de DOM - usando DOM virtual
+=========================================================================================================
+JSX - javascript + XML
+é uma forma de escrever o React.createElement de forma que esteja mais visivel
+ >> compilar >> função react >> renderizar no DOM
+vantagem: para testes rapidos
+=========================================================================================================
+outra forma de criar elemento so que mais restrita
+  - A diferença está na questão de ter todos os elementos, então para ter todos os elementos é sugerido usar React.createElement
+=========================================================================================================
+usar babel para compilação de JSX para ser renderizado --- transformar em função
+desvantagem: custo alto em performace
+
+
+
+=========================================================================================================
+
