@@ -7,16 +7,40 @@
   <title>ReactNinja</title>
 </head>
 <body>
-  <h1>Hello World</h1>
+  <!-- <h1>Hello World</h1> -->
   <div id="App"></div>
+  
   <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.1.0/react.js"></script> 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.1.0/react-dom.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.34/browser.min.js"></script>
 
+  <script type="text/babel">
+    // var h1 = React.createElement('h1', null, [
+    //   React.createElement('span',null, React.createElement('i', null, 'Italico')),
+    //   React.createElement('span', null, 'Texto do span 2')
+    // ])
 
-  <script>
-    var h1 = React.createElement('h1', null, 'Hello h1 React')
-    ReactDOM.render(h1, document.getElementById('App'))
-    console.log(h1)
+    // var h1 = React.DOM.h1(null, [
+    //   React.DOM.span(null, React.DOM.i(null, 'Italico')),
+    //   React.DOM.span(null, 'Texto do span 2')
+    // ])
+
+    var Title = React.createClass({
+      render: function() {
+        return ( 
+          <span>
+            <h1>Hello World</h1>
+          </span>
+        )
+      }
+    })
+    
+    ReactDOM.render(
+      <Title />,
+      document.getElementById('App')
+    )
+    // ReactDOM.render(<h1>Hello World</h1>, document.getElementById('App'))
+    // console.log(h1)
   </script>
 </body>
 </html>
