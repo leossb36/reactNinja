@@ -30,4 +30,11 @@ desvantagem: custo alto em performace
 
 
 =========================================================================================================
+short render notation:
+  precisa nomear
+    export { render }
 
+  sem precisar nomear
+    export default {
+      render
+    }
