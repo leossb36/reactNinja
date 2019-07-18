@@ -9,5 +9,15 @@ module.exports = {
     path: path.join(__dirname, 'dist'),
     filename: 'bundle.js',
     publicPath: '/static/' // gera um arquivo em memória
+  },
+
+  module: {
+    loaders: [{
+      test: /\.js$/,
+      exclude: /node_modules/,
+      include: /src/,
+      loader: 'babel'
+    }]
   }
+
 }

@@ -1,15 +1,21 @@
 // console.log('webpack está funcionando!!')
 
 'use strict'
-var React = require('react')
-var ReactDOM = require('react-dom')
-var Title = require('./app')
+// var React = require('react')
+// var ReactDOM = require('react-dom')
+import React from 'react'
+// import ReactDOM from 'react-dom'
+import { render } from 'react-dom'
+import Title from './app'
+// var Title = require('./app')
 // var sum = require('./app')
 
 // console.log(sum(1,2))
-
-
-ReactDOM.render(
+// ReactDOM.render(
+//   React.createElement(Title),
+//   document.querySelector('[data-js="app"]')
+// )
+render(
   React.createElement(Title),
   document.querySelector('[data-js="app"]')
 )
