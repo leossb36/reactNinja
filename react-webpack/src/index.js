@@ -16,6 +16,6 @@ import Title from './app'
 //   document.querySelector('[data-js="app"]')
 // )
 render(
-  React.createElement(Title),
+  <Title />,
   document.querySelector('[data-js="app"]')
 )
