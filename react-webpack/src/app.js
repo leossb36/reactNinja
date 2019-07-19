@@ -1,5 +1,6 @@
 'use strict'
-var React = require('react')
+// var React = require('react')
+import React from 'react'
 // function sum(var1, var2) {
 //   return var1 + var2
 // }
@@ -7,12 +8,12 @@ var React = require('react')
 // module.exports = sum
 
 
-var Title = React.createClass({
+const App = React.createClass({
   render: function() {
-    return <h1>Titulo</h1>
+    return <h1>Aplicação</h1>
   }
 })
 
 // module.exports = Title
 
-export default Title
+export default App
