@@ -3,6 +3,7 @@
 import React, { Component } from 'react'
 import Title from './Title'
 import Square from './square'
+import Button from './button'
 // function sum(var1, var2) {
 //   return var1 + var2
 // }
@@ -32,14 +33,31 @@ import Square from './square'
 // module.exports = Title
 
 class App extends Component {
+  constructor () {
+    super()
+    this.state = {
+      text: 'teste'
+    }
+  }
+  
   render() {
     return(
-      <div className='container'>
-        {['blue', 'red', 'green'].map((square) => (
-          <Square key={square} color={square} />
-        ))}
+      <div className="container" onClick={() => this.setState({
+        text: 'outro Texto'
+      })}>
+        <Button>
+          {this.state.text}
+        </Button>
       </div>
     )
   }
 }
 export default App
+// // <div className='container' onClick={function (e){
+// //   alert('clicou')
+// // }}>
+// //   <Square />
+//   {/* {['blue', 'red', 'green'].map((square) => ( */}
+//     {/* // <Square key={square} color={square} /> */}
+//   {/* ))} */}
+// // </div>
