@@ -21,7 +21,7 @@ const App = React.createClass({
   render: function() {
     return(
       <div className="container">
-        <Title name="João" lastname={{ first: 'Da', last: 'silva'}} />
+        <Title name="João" lastname="da silva" />
         <label htmlFor="input" data-label="Label">Input</label>
         <input type="text" id="input" aria-hidden={true} />
       </div>
