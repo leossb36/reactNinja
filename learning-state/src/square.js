@@ -3,7 +3,7 @@
 import React from 'react'
 
 
-const Square = ({color}) => (
+const Square = ({ color }) => (
   <div style ={{
     backgroundColor: color,
     height: '100px',

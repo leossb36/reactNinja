@@ -38,3 +38,12 @@ short render notation:
     export default {
       render
     }
+
+
+toda função render tem de ser pura
+
+
+stateful - altera o estado do elemento
+statless - não se altera originalmente em sua essencia
+
+dataflow do react - de cima para baixo, unidirecional
