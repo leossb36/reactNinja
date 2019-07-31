@@ -3,11 +3,12 @@
 import React, { Component } from 'react'
 import Button from './button'
 import Square from './square'
+import Timer from './timer'
 class App extends Component {
   constructor () {
     super()
     this.state = {
-      color: 'green'
+      showTimer: true
     }
   }
   
@@ -16,7 +17,12 @@ class App extends Component {
     var self = this
     return(
       <div >
-        <Square color = {this.state.color} />
+
+        {this.state.showTimer && <Timer />}
+        <button onClick={() => {
+          this.setState({ showTimer: !this.state.showTimer })
+        }}> Show / hide Timer</button>
+        {/* <Square color = {this.state.color} />
 
         {['red', 'green', 'blue'].map((color) => (
           <Button 
@@ -24,7 +30,7 @@ class App extends Component {
             handleClick={() => this.setState({ color })}>
             {color}
           </Button>
-        ))}
+        ))} */}
       </div>
     )
   }
